@@ -3,8 +3,9 @@
 }
 
 body {
-	background:  #333333 !important;
+	background:  #121212 !important;
 }
+
 
 .margin {
 	position: absolute;
@@ -18,3 +19,23 @@ body {
     margin-right:  5px;
     margin-left:  5px;
 }
+
+p {
+	margin-top:  45px;
+}
+
+.box1 .box2 {
+	background-color: #202020;
+}
+
+.spacer{
+	padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.col1 {
+	min-width: 100px;
+	margin-right: 10px;
+
+}
+
