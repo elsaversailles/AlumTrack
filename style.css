@@ -26,16 +26,44 @@ p {
 
 .box1 .box2 {
 	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	width: 90vw;
+	height:  17vh;
 }
 
+.box3 {
+	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	width: 90vw;
+	height:  17vh;
+}
+
+/*.spacer forr main_quest*/
 .spacer{
-	padding-top: 50px;
+	padding-top: 15px;
     padding-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
+/*name section surname field*/
 .col1 {
 	min-width: 100px;
 	margin-right: 10px;
 
 }
 
+/*alma matter field*/
+.col3 {
+	width:  50px;
+}
+
+/*for main_quest padding*/
+.container-fluid1{
+	padding-left: 4vw;
+}
