@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AlumTrack | Onboarding</title>
+	<title>AlumTrack | Login</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
@@ -50,17 +50,25 @@
 
 	<div class="container-fluid text-white">
 		<section id="main" class="text-center align-middle bg-transparent mt-3">  <!-- change section id main -->
-			<div class="margin center mx-auto-md">
+			<div class="margin center mx-auto-md text-left"> <!-- left the words -->
 		<form action="/test.php">
 			<div class="form-group">
-				<label for="idnumber">Enter your ID number</label>
+				<label for="idnumber">ID number</label>
 				<input type="number" class="form-control" placeholder="Enter ID number" min="1" max="9999999"><!-- issue: user can submit even the value is null -->			
 			</div>
-				<input type="submit" class="btn btn-primary btn-size"> <!-- button label shouble be "NEXT" -->
+			<div class="form-group">
+				<label for="password">Passphrase</label>
+				<input type="password" class="form-control">
+				<div class="spacer"> </div>
+			</div>
+			<div class="spacer2">
+			<div class="margin center mx-auto-md">
+				<input type="submit" value="Login" class="btn btn-primary btn-size">
+				</div> <!-- button label shouble be "NEXT" -->
 		</form>
 			
 		</section>
-
+</div>
 	</div>
 	</div>
 
