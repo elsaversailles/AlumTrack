@@ -51,6 +51,14 @@ p {
     margin-right: 10px;
 }
 
+.spacer2{
+	padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-top: 10vh;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
 /*name section surname field*/
 .col1 {
 	min-width: 100px;
@@ -66,4 +74,17 @@ p {
 /*for main_quest padding*/
 .container-fluid1{
 	padding-left: 4vw;
+}
+
+.error{
+	max-width:  40%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-group .idnumber {
+  text-align: left !important; /* !important added for priority in SO snippet. */
 }
