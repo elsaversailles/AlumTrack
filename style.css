@@ -59,6 +59,10 @@ p {
     margin-right: 10px;
 }
 
+.spacer3{
+	padding-bottom: 3vh;
+}
+
 /*name section surname field*/
 .col1 {
 	min-width: 100px;
