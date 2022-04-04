@@ -33,6 +33,15 @@ p {
 	height:  17vh;
 }
 
+.box4 {
+	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	width: 90vw;
+	height:  21.5vh;
+}
 .box3 {
 	background-color: #202020;
 	border-radius: 10px;
@@ -92,4 +101,10 @@ img {
 
 .form-group .idnumber {
   text-align: left !important; /* !important added for priority in SO snippet. */
+}
+
+
+.radio-inline{
+	margin: 10px;
+
 }
