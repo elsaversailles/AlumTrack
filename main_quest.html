@@ -107,29 +107,23 @@
 		<!-- alma matter section -->
 		<div class="box3 d-flex-row justify-content-center">
 			<div class="p-1 ml-1">Gender</div>
-				<div class="spacer">			
-                    <div class="input-group" role="group" >
-                        <div class="input-group-btn" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" id="gender_selection" data-toggle="dropdown"  style="backcolor:#FFF;" > <span class="selection">Gender:  </span></button>
-                    		<div class="dropdown-menu" id="dropdown" style="background-color:#272727;color:#FFF;">
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">Female</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item2">Male</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item3">Transgender</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item4">Non-binary</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item5">Genderqueer</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item6">Gender fluid</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item7">Gender neutral</a></li>
-                        		<li><a class="dropdown-item text-white" href="#" data-value="item8">Prefer not to say</a></li>
-                    		</div>
-                    	</div>
-                    </div>
+				<div class="spacer">
+				<div class="gender" style="width:200px;">			
+                   <form action="/action_page.php">
+ 						<select name="gender" id="gender">
+    					<option value="volvo">Female</option>
+    					<option value="saab">Male</option>
+    					<option value="opel">Transgender</option>
+    					<option value="audi">Non-binary</option>
+    					<option value="audi">Genderqueer</option>
+    					<option value="audi">Gender fluid</option>
+    					<option value="audi">Gender neutral</option>
+    					<option value="audi">Prefer not to say</option>
+  						</select>
+					</form>
+					</div> 
         	    </div>
-            	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <div class="input-group" role="group">
-                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
-                </div>
             	</div>
-      			</div>
 
       	<div class="box1 flex-box justify-content-center">
 		<div class="box4 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
@@ -167,7 +161,7 @@
     			</div>
 			</form>
 				</div>	
-		</div>
+		</div></div>
 
 
 			<section id="quest" class="text-center align-middle bg-transparent mt-3">
@@ -181,21 +175,13 @@
 		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
 			<div class="p-1 ml-1">Current School</div>
 				<div class="spacer">			
-                    <div class="input-group" role="group" >
-                        <div class="input-group-btn" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" id="AdvancedSearch" data-toggle="dropdown"  style="backcolor:#FFF;" > <span class="selection1">La Concepcion College:  </span></button>
-                    		<div class="dropdown-menu" id="dropdown" style="background-color:#272727;color:#FFF;">
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">La Concepcion College</a></li>
-                     		</div>
-                    	</div>
-                    </div>
+                    <form action="/action_page.php">
+ 						<select name="current_school" id="current_school">
+    					<option value="volvo">La Concepcion College</option>
+    					</select>
+					</form> 
         	    </div>
-            	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <div class="input-group" role="group">
-                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
-                </div>
-            </div>
-        </div>
+            	</div>
 		</div>
 
 
@@ -203,76 +189,123 @@
 		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
 			<div class="p-1 ml-1">Current Educational Attainment</div>
 				<div class="spacer">			
-                    <div class="input-group" role="group" >
-                        <div class="input-group-btn" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" id="education" data-toggle="dropdown"  style="backcolor:#FFF;" > <span class="selection2">Education: </span></button>
-                    		<div class="dropdown-menu" id="dropdown" style="background-color:#272727;color:#FFF;">
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item9">Elementary</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item10">Junior high school</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item11">Senior high school</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item12">College</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item13">Master's or doctorate degree</a></li>
-                     		</div>
-                    	</div>
-                    </div>
+                    <form action="/action_page.php">
+ 						<select name="cars" id="cars">
+    					<option value="volvo">Elementary</option>
+    					<option value="saab">Junior high school</option>
+    					<option value="opel">Senior high school</option>
+    					<option value="audi">College</option>
+    					<option value="audi">Master's or doctorate degree</option>
+    					</select>
+					</form> 
         	    </div>
-            	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <div class="input-group" role="group">
-                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
-                </div>
-            </div>
-        </div>
+            	</div>
 		</div>
 
 		<div class="box1 flex-box justify-content-center">
 		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
 			<div class="p-1 ml-1">Course/Strand</div>
 				<div class="spacer">			
-                    <div class="input-group" role="group" >
-                        <div class="input-group-btn" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" id="course" data-toggle="dropdown"  style="backcolor:#FFF;" > <span class="selection">Course/Strand: </span></button>
-                    		<div class="dropdown-menu" id="dropdown" style="background-color:#272727;color:#FFF;">
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">BS Information System</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">ICT</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">Stem</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">Humms</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">BS Information Technology</a></li>
-                     		</div>
-                    	</div>
-                    </div>
+                    <form action="/action_page.php">
+ 						<select name="cars" id="cars">
+    					<option value="volvo">BS information system</option>
+    					<option value="saab">ICT</option>
+    					<option value="opel">STEM</option>
+    					<option value="audi">HUMMS</option>
+    					<option value="audi">BS information technology</option>
+    					</select>
+					</form> 
         	    </div>
-            	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <div class="input-group" role="group">
-                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
-                </div>
-            </div>
-        </div>
-		</div>
+        	    </div>
+            	</div>
 
 		<div class="box1 flex-box justify-content-center">
 		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
 			<div class="p-1 ml-1">Specialization</div>
 				<div class="spacer">			
-                    <div class="input-group" role="group" >
-                        <div class="input-group-btn" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" id="specialization" data-toggle="dropdown" OnClick="AdvancedSubmit();"  style="backcolor:#FFF;" > <span class="selection">Specialization: </span></button>
-                    		<div class="dropdown-menu" id="dropdown" style="background-color:#272727;color:#FFF;">
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">EIM</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">ICT</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">CHS</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">Dress making</a></li>
-                     			<li><a class="dropdown-item text-white" href="#" data-value="item1">Technical drafting</a></li>
-                     		</div>
-                    	</div>
-                    </div>
+                    <form action="/action_page.php">
+ 						<select name="cars" id="cars">
+    					<option value="volvo">EIM</option>
+    					<option value="saab">ICT</option>
+    					<option value="opel">CHS</option>
+    					<option value="audi">Dress making</option>
+    					<option value="audi">Technical drafting</option>
+    					</select>
+					</form> 
         	    </div>
-            	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <div class="input-group" role="group">
-                        <input type="text" id="InquiryInput2" onblur="javascript:removeSpaces()" style="display:none" runat="server" class="form-control" Width="280px" placeholder="Asset Dept, Building, Asset MGR BEMSID #" />
-                </div>
-            </div>
-        </div>
+            	</div>
 		</div>
+
+		<div class="box1 flex-box justify-content-center">
+		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
+			<div class="p-1 ml-1">Learning style</div>
+				<div class="spacer"></div>
+		<div class="container">
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Visual
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Auditory
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Reading/writing
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Kinesthetic
+    </label>
+  </form>
+</div>
+</div>
+</div>
+
+<div class="box1 flex-box justify-content-center">
+		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
+			<div class="p-1 ml-1">Bio</div>
+				<div class="spacer">
+			<form>
+  				<div class="form-row">
+   					 <div class="col col1">
+      					<input type="text" class="form-control" maxlength="50" placeholder="max 50 characters">
+  					 </div>
+    			</div>
+			</form>
+				</div>	
+		</div></div>
+
+<section id="quest1" class="text-center align-middle bg-transparent mt-3">
+			<div class="margin-top mx-auto-md spacer3" style="font-size:3vh; padding-right: 4vw;">
+			<p>Work Profile</p>
+	
+	</div>
+</section>
+<div class="box1 flex-box justify-content-center">
+		<div class="box3 d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
+			<div class="p-1 ml-1">Current work</div>
+				<div class="spacer">
+			<form>
+  				<div class="form-row">
+   					 <div class="col col1">
+      					<input type="text" class="form-control" maxlength="100" placeholder="max 100 characters">
+  					 </div>
+    			</div>
+			</form>
+				</div>	
+		</div></div>
+<div class="flex-box justify-content-center align-middle mt-3">
+	<div class="row align-items-end">
+	<div class="allign-bottom mx-auto">
+			 <div class="spacer"> </div> <!-- box3 for little top spacing -->
+			<div class="col-md-6">
+			<a class="btn btn-primary btn-size" href="./id_number.html" role="button">Next</a>
+		</section>
+	</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
 
 
 
