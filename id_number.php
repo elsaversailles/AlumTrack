@@ -24,7 +24,8 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
   // debug muna ulit bago ituloy
 
   if (mysqli_num_rows($result) > 0) {
-    echo 'success to';
+    //echo 'success to';
+    include 'main_quest.html';
     exit();
   }
   else {
