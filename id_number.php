@@ -1,34 +1,42 @@
 <?php
+$dbhost = 'localhost';
+$dbusername = 'root';
+$dbpassword = '';
+$dbname = 'demo'; 
 
-$host="localhost";
-$user="root";
-$password="";
-$db="demo";
+//$dbcon = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname); // eto yung possible issue
+$dbcon = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
 
-mysql_connect($host,$user,$password);
-mysql_select_db($db);
+if (!$dbcon) { // at dito rin 
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
-if(isset([$_POST'idnumber'])){
+// move na tayo sa next testing
 
-	$uname=$_POST['idnumber'];
-	$password=$_POST['password'];
 
-	$sql="select * from loginform where user='".$uname."'AND Pass='".$password."'
-	limit 1";
+if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang error imbis na pass, password dapatt dahil dun sa html mo password nakalagay
+/// okay move na ulit sa next testing
 
-	$result=mysql_query($sql);
+  $user = mysqli_real_escape_string($dbcon, $_POST['idnumber']); // eto pa next na issue, dapat same yung nasa $_POST mo
+  $pass = mysqli_real_escape_string($dbcon, $_POST['password']);
+ 
+  $result = mysqli_query($dbcon, "SELECT * FROM `loginform` WHERE `User` = ".$user." AND `Pass` = '".$pass."'"); // ang ginawa dito, nialgay na yung galing mismo sa form
+  // debug muna ulit bago ituloy
 
-	if(mysql_num_rows($result)==1){
-		echo " you have login successfully";
-		exit();
-	}
-	else{
-		echo "You have entered wrong password";
-		exit();
-	}
+  if (mysqli_num_rows($result) > 0) {
+    echo 'success to';
+    exit();
+  }
+  else {
+    // login error
+    echo 'incorrect login to';
+    exit();
+  }
+  
 }
 
 ?>
+
 
 
 <!DOCTYPE html>
