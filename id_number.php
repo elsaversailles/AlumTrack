@@ -104,7 +104,6 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
 				</div>
 				<div class="col-md-12 text-center">
 				<input type="submit" value="Login" class="btn btn-primary btn-size">
-				<a class="btn btn-primary btn-size" href="./onboarding.html" role="button">Debug</a>
 				</div> <!-- button label shouble be "NEXT" -->
 		</form>
 			
