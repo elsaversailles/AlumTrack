@@ -52,6 +52,17 @@ p {
 	height:  17vh;
 }
 
+.box5 {
+	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	width: 90vw;
+	height:  70vh;
+	margin-left: 5vw;
+}
+
 /*.spacer forr main_quest*/
 .spacer{
 	padding-top: 15px;
