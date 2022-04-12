@@ -25,12 +25,13 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
 
   if (mysqli_num_rows($result) > 0) {
     //echo 'success to';
-    include 'main_quest.html';
+  include 'main_quest.html';
+    //header("main_quest.php");
     exit();
   }
   else {
     // login error
-    echo 'incorrect login to';
+    header("id_number_retry.php");
     exit();
   }
   
@@ -96,7 +97,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
 		<form method="POST" action="#">
 			<div class="form-group">
 				<label for="idnumber">ID number</label>
-				<input type="number" class="form-control" name="idnumber" placeholder="Enter ID number" min="1" max="9999999"><!-- issue: user can submit even the value is null -->			
+				<input type="number" class="form-control" name="idnumber" placeholder="Enter ID number" min="1" max="99999999"><!-- issue: user can submit even the value is null -->			
 			</div>
 			<div class="form-group">
 				<label for="password">Passphrase</label>
