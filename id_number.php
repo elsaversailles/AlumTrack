@@ -31,7 +31,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
   }
   else {
     // login error
-    header("id_number_retry.php");
+    header("Location: id_number_retry.php");
     exit();
   }
   
