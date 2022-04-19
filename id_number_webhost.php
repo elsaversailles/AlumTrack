@@ -20,7 +20,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
   $user = mysqli_real_escape_string($dbcon, $_POST['idnumber']); // eto pa next na issue, dapat same yung nasa $_POST mo
   $pass = mysqli_real_escape_string($dbcon, $_POST['password']);
  
-  $result = mysqli_query($dbcon, "SELECT * FROM `loginform` WHERE `User` = ".$user." AND `Pass` = '".$pass."'"); // ang ginawa dito, nialgay na yung galing mismo sa form
+  $result = mysqli_query($dbcon, "SELECT * FROM `demo` WHERE `User` = ".$user." AND `Pass` = '".$pass."'"); // ang ginawa dito, nialgay na yung galing mismo sa form
   // debug muna ulit bago ituloy
 
   if (mysqli_num_rows($result) > 0) {
