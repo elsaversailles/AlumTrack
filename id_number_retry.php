@@ -25,6 +25,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
 
   if (mysqli_num_rows($result) > 0) {
     //echo 'success to';
+	  $_SESSION['loggedin'] = TRUE; //session maker
     include 'main_quest.html';
     exit();
   }
