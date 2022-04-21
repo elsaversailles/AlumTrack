@@ -1,4 +1,7 @@
 <?php
+	session_start(); //keep it here for now
+
+
 $dbhost = 'localhost';
 $dbusername = 'root';
 $dbpassword = '';
@@ -7,6 +10,7 @@ $dbname = 'demo';
 //$dbcon = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname); // eto yung possible issue
 $dbcon = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
 
+	
 if (!$dbcon) { // at dito rin 
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
@@ -24,9 +28,10 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
   // debug muna ulit bago ituloy
 
   if (mysqli_num_rows($result) > 0) {
+  	$_SESSION['loggedin'] = TRUE;
     //echo 'success to';
-  include 'main_quest.html';
-    //header("main_quest.php");
+  include 'main_quest.php';
+    //header('Location: main_quest.php'); //this function throws err500
     exit();
   }
   else {
