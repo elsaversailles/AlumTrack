@@ -52,7 +52,7 @@ if(!isset($_SESSION['loggedin'])){
                 <a class="nav-link" href="#">Help</a>
             </li>
             <li>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./about.html">About</a>
             </li>
             <li>
                 <a class="nav-link" href="#">Login</a>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['loggedin'])){
 	</section>
 <!-- name section -->
 
-<form action="./debugging_page.php" method="post"> <!-- working -->
+<form action="form_submit.php" method="post"> <!-- working -->
 	<div class="box1 flex-box justify-content-center">
 		<div class="box2 d-flex-row justify-content-center">
 			<div class="p-1 ml-1">Name</div>
