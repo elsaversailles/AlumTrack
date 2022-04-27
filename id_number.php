@@ -5,7 +5,7 @@
 $dbhost = 'localhost';
 $dbusername = 'root';
 $dbpassword = '';
-$dbname = 'demo'; 
+$dbname = 'usrdb'; 
 
 //$dbcon = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname); // eto yung possible issue
 $dbcon = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
@@ -84,7 +84,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
                 <a class="nav-link" href="#">Help</a>
             </li>
             <li>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li>
                 <a class="nav-link" href="#">Login</a>
