@@ -24,6 +24,9 @@ p {
 	margin-top:  45px;
 }
 
+p1 {
+	margin-top: 0px;
+}
 .box1 .box2 {
 	background-color: #202020;
 	border-radius: 10px;
@@ -33,15 +36,48 @@ p {
 	height:  17vh;
 }
 
-.box4 {
+.box4{
 	background-color: #202020;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 2px solid #202020 ;
 	padding:  2px;
 	margin-top: 10px;
 	width: 90vw;
 	height:  21.5vh;
 }
+
+.box7 {
+	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	width: 90vw;
+	height:  100px;
+}
+
+.box8 {
+	background-color: #202020;
+	border-radius: 10px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 90vw;
+	height:  100px;
+}
+
+.box9 {
+	background-color: #202020;
+	border-radius: 5px;
+	border: 2px solid #202020 ;
+	padding:  2px;
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 90vw;
+	height:  21.5vh;
+}
+
 .box3 {
 	background-color: #202020;
 	border-radius: 10px;
@@ -50,17 +86,6 @@ p {
 	margin-top: 10px;
 	width: 90vw;
 	height:  17vh;
-}
-
-.box5 {
-	background-color: #202020;
-	border-radius: 10px;
-	border: 2px solid #202020 ;
-	padding:  2px;
-	margin-top: 10px;
-	width: 90vw;
-	height:  70vh;
-	margin-left: 5vw;
 }
 
 /*.spacer forr main_quest*/
@@ -81,6 +106,18 @@ p {
 
 .spacer3{
 	padding-bottom: 3vh;
+}
+
+.spacer4{
+	padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.spacer5{
+	padding-top: 20px;
 }
 
 /*name section surname field*/
@@ -110,6 +147,11 @@ img {
   height: auto;
 }
 
+img2 {
+	max-width: 50%;
+	height:  auto;
+}
+
 .form-group .idnumber {
   text-align: left !important; /* !important added for priority in SO snippet. */
 }
@@ -118,4 +160,15 @@ img {
 .radio-inline{
 	margin: 10px;
 
+}
+
+.jst {
+	  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container{
+	    display: flex;
+      justify-content: center;
+      align-items: center;
 }
