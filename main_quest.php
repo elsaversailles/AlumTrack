@@ -73,7 +73,7 @@ if(!isset($_SESSION['loggedin'])){
 	</section>
 <!-- name section -->
 
-<form action="form_submit.php" method="post"> <!-- working -->
+<form action="user_profile.php" method="post"> <!-- working -->
 	<div class="box1 flex-box justify-content-center">
 		<div class="box2 d-flex-row justify-content-center">
 			<div class="p-1 ml-1">Name</div>
