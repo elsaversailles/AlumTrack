@@ -64,7 +64,7 @@ if(!isset($_SESSION['loggedin'])){
 		<div class="col">
 			<div class="box7">
 		<img src="./images/profile.png" class="float-left img-fluid rounded-circle img-thumbnail" style="max-width:75px; margin-top: 10px; margin-right: 20px;">
-		<p class="float-left align-middle text-center" style="padding-bottom: 50px;"> <font size="5"><?php echo $_POST["first"]; ?> <?php echo $_POST["mi"]; ?> <?php echo $_POST["last"]; ?></font></p> 
+		<p class="float-left align-middle text-center" style="padding-bottom: 50px;"> <font size="4"><?php echo $_POST["first"]; ?> <?php echo $_POST["mi"]; ?> <?php echo $_POST["last"]; ?></font></p> 
 	</div>
 </div>
 </section>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['loggedin'])){
 
 
 <section id="2nd">
-<div class="box8 text-white text-center col">
+<div class="box9 text-white text-center col">
 	<!-- <div class="col"> -->
 
 		<p class="mx-auto"> <?php echo $_POST["bio"]; ?></p>
@@ -86,7 +86,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="bday">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/2985632.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/2985632.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 	<p class="float-left align-middle text-justify" style=" margin-left: 0.5vh;"> <font size="3"><?php echo $_POST["datepicker"]; ?> </font></p>
 </div>
 </div>	
@@ -99,7 +99,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="gender">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/2512388.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/2512388.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify" style=" margin-left: 0.5vh;"> <font size="3"><?php echo $_POST["gender_selector"]; ?></font></p>
 	</div>
 </div>
@@ -109,20 +109,20 @@ if(!isset($_SESSION['loggedin'])){
 	
 		<div class="box9 flex-box justify-content-center text-white">
 		<div class="d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
-			<img src="./images/2091457.png" class="float-left img-fluid " style="max-width:55px; margin-top: 10px; margin-right: 5vw;">
+			<img src="./images/2091457.png" class="float-left img-fluid " style="max-width:50px; margin-top: 25px; margin-right: 10vw;">
 				<div class="spacer">
   				<div class="form-row">
    					 <div class="col col1">
-      					<p><?php echo $_POST["skill_1"]; ?></p>
+      					<p style="margin-top: 10px;"><?php echo $_POST["skill_1"]; ?></p>
   					 </div>
     				<div class="col col1">
-     				 	<p><?php echo $_POST["skill_2"]; ?></p>
+     				 	<p style="margin-top: 10px;"><?php echo $_POST["skill_2"]; ?></p>
   					</div>
   					<div class="col col1">
-  						<p><?php echo $_POST["skill_3"]; ?></p>
+  						<p style="margin-top: 10px;"><?php echo $_POST["skill_3"]; ?></p>
   					</div>
   					<div class="col col1">
-  						<p><?php echo $_POST["skill_4"]; ?></p>
+  						<p style="margin-top: 10px;"><?php echo $_POST["skill_4"]; ?></p>
   					</div>
   				</div>
 				</div>	
@@ -132,7 +132,7 @@ if(!isset($_SESSION['loggedin'])){
 	<section id="cur_sch">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/1048947 (1).png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/1048947 (1).png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["current_school"]; ?></font></p>
 	</div>
 </div>
@@ -142,7 +142,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_sect">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/4207247.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/4207247.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify" style="word-wrap: break-word;"> <font size="3"><?php echo $_POST["cur_educ_at"]; ?></font></p>
 	</div>
 </div>
@@ -152,7 +152,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_sect">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/profile.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/profile.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["cor_str"]; ?></font></p>
 	</div>
 </div>
@@ -162,7 +162,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_sect">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/1738746.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/1738746.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["specialization"]; ?></font></p>
 	</div>
 </div>
@@ -172,7 +172,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_sect">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/4616734.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/4616734.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["ls"]; ?></font></p>
 	</div>
 </div>
@@ -182,7 +182,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_sect">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/3020657.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/3020657.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["phone_num"]; ?></font></p>
 	</div>
 </div>
@@ -192,7 +192,7 @@ if(!isset($_SESSION['loggedin'])){
 <section id="cur_work">
 	<div class="box8 text-white">
 	<div class="col">
-		<img src="./images/3281289.png" class="float-left img-fluid " style="max-width:65px; margin-top: 10px; margin-right: 25vw;">
+		<img src="./images/3281289.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["current_work"]; ?></font></p>
 	</div>
 </div>
