@@ -215,11 +215,20 @@ if(!isset($_SESSION['loggedin'])){
 				<div class="p-1 ml-1">Course/Strand</div>
 				<div class="spacer">			
  						<select name="cor_str" id="cor_str">
-    					<option value="BS information system">BS information system</option>
-    					<option value="ICT">ICT</option>
-    					<option value="STEM">STEM</option>
-    					<option value="HUMMS">HUMMS</option>
-    					<option value="BS information technology">BS information technology</option>
+    					<option value="Accountancy">Accountancy</option>
+    					<option value="Business Administration">Business Administration</option>
+    					<option value="Communication Arts">Communication Arts</option>
+    					<option value="Criminology">Criminology</option>
+    					<option value="Engineering">Engineering</option>
+    					<option value="Hospitality Management">Hospitality Management</option>
+    					<option value="Information Technology">Information Technology</option>
+    					<option value="Psychology">Psychology</option>
+    					<option value="Education">Education</option>
+    					<option value="TESDA">TESDA</option>
+    					<option value="Academic Track">Academic Track</option>
+    					<option value=" Technical Vocational Livelihood Track"> Technical Vocational Livelihood Track</option>
+    					<option value="Arts and Design Track">Arts and Design Track</option>
+    					<option value="Sports Track">Sports Track</option>
     					</select> 
         	    </div>
         	</div>
@@ -230,11 +239,31 @@ if(!isset($_SESSION['loggedin'])){
 			<div class="p-1 ml-1">Specialization</div>
 				<div class="spacer">			
  						<select name="specialization" id="specialization">
-    					<option value="EIM">EIM</option>
-    					<option value="ICT">ICT</option>
-    					<option value="CHS">CHS</option>
-    					<option value="Dress making">Dress making</option>
-    					<option value="Technical drafting">Technical drafting</option>
+    					<option value="BS Accountancy">BS in Accountancy</option>
+    					<option value="BS Accounting Information System">BS Accounting Information System</option>
+    					<option value="BS Business Administration">BS Business Administration</option>
+    					<option value="BA English Language">BA English Language </option>
+    					<option value="BS Criminology">BS in Criminology</option>
+    					<option value="BS Civil Engineering">BS Civil Engineering</option>
+    					<option value="BS Hospitality Management">BS Hospitality Management</option>
+    					<option value="BS Information System">BS Information System</option>
+    					<option value="BS Information Technology">BS Information Technology</option>
+    					<option value="BS Psychology">BS Psychology</option>
+    					<option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
+    					<option value="Bachelor of Secondary Education">Bachelor of Secondary Education</option>
+    					<option value="Bachelor of Physical Education">Bachelor of Physical Education</option>
+    					<option value="SMAW NC2">SMAW NC2</option>
+    					<option value="Housekeeping NC2">Housekeeping NC2</option>
+    					<option value="Food & Beverage Services NC2">Food & Beverage Services NC2</option>
+    					<option value="ABM">Accountancy and Business Management</option>
+    					<option value="General Academics">General Academics (GAS)</option>
+    					<option value="HUMMS">Humanities and Social Sciences</option>
+    					<option value="STEM">Science, Technology, Engineering, and Mathematics</option>
+    					<option value="ICT">Information and Communications Technology</option>
+    					<option value="Home Economics">Home Economics</option>
+    					<option value="Industrial Arts">Industrial Arts</option>
+    					<option value="Arts and Design Track">Arts and Design Track</option>
+    					<option value="Sports Track">Sports Track</option>
     					</select>
         	    </div>
             </div>
@@ -246,16 +275,16 @@ if(!isset($_SESSION['loggedin'])){
 				<div class="spacer"></div>
 				<div class="container">
     					<label class="radio-inline">
-      						<input type="radio" name="ls" value="visual">Visual
+      						<input type="radio" name="ls" value="Visual">Visual
    						</label>
     					<label class="radio-inline">
-      						<input type="radio" name="ls" value="auditory">Auditory
+      						<input type="radio" name="ls" value="Auditory">Auditory
     					</label>
     					<label class="radio-inline">
-     						<input type="radio" name="ls" value="read/writing">Reading/writing
+     						<input type="radio" name="ls" value="Read/writing">Reading/writing
     					</label>
     					<label class="radio-inline">
-      						<input type="radio" name="ls" value="kinesthetic">Kinesthetic
+      						<input type="radio" name="ls" value="Kinesthetic">Kinesthetic
     					</label>
     					</select>
 				</div>
