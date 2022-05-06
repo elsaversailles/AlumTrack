@@ -6,8 +6,6 @@ if(!isset($_SESSION['loggedin'])){
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +22,7 @@ if(!isset($_SESSION['loggedin'])){
 </head>
 <body>
 
-	<div class="container-fluid">
+<div class="container-fluid">
 <div class="container-fluid">
 	<div class="row">
 		<div class="col">
@@ -58,30 +56,22 @@ if(!isset($_SESSION['loggedin'])){
 </div>
 	
 
-
-<section id="main" class="text-center align-middle bg-transparent mt-3">
+<section id="user_name" class="text-center align-middle bg-transparent mt-3">
 	<div class="text-white"> <!-- if you add container-fluid itll go -->
 		<div class="col">
 			<div class="box7">
 		<img src="./images/profile.png" class="float-left img-fluid rounded-circle img-thumbnail" style="max-width:75px; margin-top: 10px; margin-right: 20px;">
-		<p class="float-left align-middle text-center" style="padding-bottom: 50px;"> <font size="4"><?php echo $_POST["first"]; ?> <?php echo $_POST["mi"]; ?> <?php echo $_POST["last"]; ?></font></p> 
+		<p class="float-left align-middle text-center" style="padding-bottom: 50px;"> <font size="3"><?php echo $_POST["first"]; ?> <?php echo $_POST["mi"]; ?> <?php echo $_POST["last"]; ?></font></p> 
+			</div>
 	</div>
-</div>
 </section>
 
-
-
-
-<section id="2nd">
+<section id="bio">
 <div class="box9 text-white text-center col">
 	<!-- <div class="col"> -->
-
 		<p class="mx-auto"> <?php echo $_POST["bio"]; ?></p>
-
 </div>
 </section>
-
-
 
 <section id="bday">
 	<div class="box8 text-white">
@@ -92,54 +82,47 @@ if(!isset($_SESSION['loggedin'])){
 </div>	
 </section>
 
-
-</section>
-
-
 <section id="gender">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/2512388.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify" style=" margin-left: 0.5vh;"> <font size="3"><?php echo $_POST["gender_selector"]; ?></font></p>
 	</div>
+	</div>
+</section>
+	
+<div class="box9 flex-box justify-content-center text-white">
+	<div class="d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
+		<img src="./images/2091457.png" class="float-left img-fluid " style="max-width:50px; margin-top: 25px; margin-right: 10vw;">
+			<div class="spacer">
+  			<div class="form-row">
+   				 <div class="col col1">
+    				<p style="margin-top: 10px;"><?php echo $_POST["skill_1"]; ?></p>
+  				 </div>
+    			<div class="col col1">
+    			 	<p style="margin-top: 10px;"><?php echo $_POST["skill_2"]; ?></p>
+  				</div>
+  				<div class="col col1">
+  					<p style="margin-top: 10px;"><?php echo $_POST["skill_3"]; ?></p>
+  				</div>
+  				<div class="col col1">
+  					<p style="margin-top: 10px;"><?php echo $_POST["skill_4"]; ?></p>
+  				</div>
+  			</div>
+			</div>	
+	</div>
 </div>
 
-</section>
-		
-	
-		<div class="box9 flex-box justify-content-center text-white">
-		<div class="d-flex-row justify-content-center"> <!-- box3 for little top spacing -->
-			<img src="./images/2091457.png" class="float-left img-fluid " style="max-width:50px; margin-top: 25px; margin-right: 10vw;">
-				<div class="spacer">
-  				<div class="form-row">
-   					 <div class="col col1">
-      					<p style="margin-top: 10px;"><?php echo $_POST["skill_1"]; ?></p>
-  					 </div>
-    				<div class="col col1">
-     				 	<p style="margin-top: 10px;"><?php echo $_POST["skill_2"]; ?></p>
-  					</div>
-  					<div class="col col1">
-  						<p style="margin-top: 10px;"><?php echo $_POST["skill_3"]; ?></p>
-  					</div>
-  					<div class="col col1">
-  						<p style="margin-top: 10px;"><?php echo $_POST["skill_4"]; ?></p>
-  					</div>
-  				</div>
-				</div>	
-		</div>
-	</div>
-
-	<section id="cur_sch">
+<section id="cur_sch">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/1048947 (1).png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["current_school"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
-<section id="cur_sect">
+<section id="cur_educ_attainment">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/4207247.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
@@ -149,44 +132,40 @@ if(!isset($_SESSION['loggedin'])){
 
 </section>
 		
-<section id="cur_sect">
+<section id="course_str">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/profile.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["cor_str"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
-<section id="cur_sect">
+<section id="specialization">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/1738746.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["specialization"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
-<section id="cur_sect">
+<section id="learning_style">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/4616734.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["ls"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
-<section id="cur_sect">
+<section id="phone_num">
 	<div class="box8 text-white">
 	<div class="col">
 		<img src="./images/3020657.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["phone_num"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
 <section id="cur_work">
@@ -195,8 +174,7 @@ if(!isset($_SESSION['loggedin'])){
 		<img src="./images/3281289.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
 		<p class="float-left align-middle text-justify"> <font size="3"><?php echo $_POST["current_work"]; ?></font></p>
 	</div>
-</div>
-
+	</div>
 </section>
 
 <div class="spacer">
