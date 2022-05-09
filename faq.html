@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FaQs</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- external css (make this last to let all API load)-->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+		<nav class="navbar navbar-dark navbar-expand-md bg-transparent sticky-top">
+     	   <a class="navbar-brand" href="./index.html"> <!-- for pasting change to ./index.html -->
+  		  <img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    		AlumTrack</a>
+		</nav>
+</div>
+		<div class="container-fluid col">
+		<nav class="navbar-nav navbar-expand-md navbar-dark bg-transparent sticky-top p-2">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav1" >
+				<span class=navbar-toggler-icon></span> <!-- toggler is hamburger menu -->
+			</button>
+    <div class="collapse navbar-collapse text-white" id="portfolio-nav1">
+        <ul class="navbar-nav ml-auto">
+            <li>
+                <a class="nav-link" href="faq.html">Help</a>
+            </li>
+            <li>
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+    </div>   
+		</nav>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-white">
+	<div class="spacer5">
+		<div class="flex-box justify-content-center">
+		<div class="d-flex-row justify-content-center">
+	
+			<h4 class="text-center mx-auto d-block">Frequently ask questions </h4>
+			</div>			
+			<div class="spacer"></div>
+		</div>
+		<div class="accordion" id="accordionExample">
+  <div class="card ">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What is this website all about?
+        </button>
+      </h2>
+    </div>
+
+     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+    AlumTrack is the first project we did on a dedicated field of study. It aims to remove the "graduation fog" where schools almost always losts contact on their former students after graduation.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Who made this?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+       A 5 person group in ICT grade 12. Which specializes on creating bleeding edge paper with a unique technological twist. AlumTrack is coded by Elsa Versailles but all of us contributed on its planning and documentation phase.
+      </div>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      		Who is Elsa Versailles?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+
+Me! The project leader, that's my "pen name" 😅
+      </div>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      		I see, is your website open source? 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+Definitely! Elsa Versailles really loves to open source her project and that's why AlumTrack is available on github with MIT license. There are 2 current forks of the project and we intend to release the full paper in the future.
+      </div>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header" id="headingFive">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      		Is Alumtrack Complete?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+Unfortunately, no we don't have much time to fix all the bugs and fully implement all of our plans. So AlumTrack is technically unfinished project. Don't fret, Elsa Versailles might finish this once she goes to college.
+      </div>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header" id="headingSix">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      		What are the compatible browsers?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+It's recommended to use AlumTrack in the latest version of browsers. Preferably Chrome and Firefox version 100 and up.
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      		Does the site comply with privacy laws?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+Yes of course! The current version of AlumTrack cannot store user data. 
+
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="headingEight">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      		Is their any internet speed requirements?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+None! As long as you have internet connection of more than 10KB/s AlumTrack would run fine.
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="headingNine">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed text-primary" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      		Why AlumTrack is limited to La Concepcion College?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+      <div class="card-body text-white" style="background-color: #202020;">
+AlumTrack is still in Alpha phase so we opted to test it on our Alma matter. As it's the most accessible for development and offers a favorable conditions. 
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingNine">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed text-primary" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+      		Credits
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+      <div class="card-body text-dark">
+      	<ul class="list-group">
+      		<li class="list-group-item">Flaticon - For icons</li>
+      		<li class="list-group-item">Bootstrap - CSS framework </li>
+      		<li class="list-group-item">Infinityfree - Free webhosting </li>
+      		<li class="list-group-item">GPT3 - An AI writing copilot</li>
+      	</ul>
+      </div>
+    </div>
+  </div>
+
+<div class="spacer"></div>
+
+	</div>
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
