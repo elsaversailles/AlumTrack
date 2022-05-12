@@ -30,7 +30,7 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
   if (mysqli_num_rows($result) > 0) {
   	$_SESSION['loggedin'] = TRUE;
     //echo 'success to';
-  include 'main_quest.php';
+  include 'onboarding.html';
     //header('Location: main_quest.php'); //this function throws err500
     exit();
   }
