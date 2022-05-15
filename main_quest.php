@@ -68,7 +68,7 @@ if(!isset($_SESSION['loggedin'])){
 	<section id="quest" class="text-center align-middle bg-transparent mt-3">
 			<div class="margin-top mx-auto-md spacer3" style="font-size:3vh; padding-right: 4vw;">
 			<p>Tell us about yourself!</p>
-	
+	 
 	</div>
 	</section>
 <!-- name section -->
