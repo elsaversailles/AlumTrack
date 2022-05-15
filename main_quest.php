@@ -49,10 +49,10 @@ if(!isset($_SESSION['loggedin'])){
     <div class="collapse navbar-collapse text-white" id="portfolio-nav1">
         <ul class="navbar-nav ml-auto">
             <li>
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="faq.html">Help</a>
             </li>
             <li>
-                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
             <li>
                 <a class="nav-link" href="#">Login</a>
@@ -115,6 +115,7 @@ if(!isset($_SESSION['loggedin'])){
 				<div class="spacer">
 				<div class="gender" style="width:200px;">			
  						<select name="gender_selector" id="gender">
+                        <option value=""></option>
     					<option value="Female">Female</option>
     					<option value="Male">Male</option>
     					<option value="Transgender">Transgender</option>
@@ -200,6 +201,7 @@ if(!isset($_SESSION['loggedin'])){
 				<div class="p-1 ml-1">Current Educational Attainment</div>
 					<div class="spacer">			
  						<select name="cur_educ_at" id="cur_educ_at"> <!-- same name and id, this might be a issue -->
+                        <option value=""></option>
     					<option value="Elemenatry">Elementary</option>
     					<option value="Junior high school">Junior high school</option>
     					<option value="Senior high school">Senior high school</option>
@@ -215,6 +217,7 @@ if(!isset($_SESSION['loggedin'])){
 				<div class="p-1 ml-1">Course/Strand</div>
 				<div class="spacer">			
  						<select name="cor_str" id="cor_str">
+                        <option value=""></option>
     					<option value="Accountancy">Accountancy</option>
     					<option value="Business Administration">Business Administration</option>
     					<option value="Communication Arts">Communication Arts</option>
@@ -239,6 +242,7 @@ if(!isset($_SESSION['loggedin'])){
 			<div class="p-1 ml-1">Specialization</div>
 				<div class="spacer">			
  						<select name="specialization" id="specialization">
+                         <option value=""></option>
     					<option value="BS Accountancy">BS in Accountancy</option>
     					<option value="BS Accounting Information System">BS Accounting Information System</option>
     					<option value="BS Business Administration">BS Business Administration</option>
@@ -255,11 +259,11 @@ if(!isset($_SESSION['loggedin'])){
     					<option value="SMAW NC2">SMAW NC2</option>
     					<option value="Housekeeping NC2">Housekeeping NC2</option>
     					<option value="Food & Beverage Services NC2">Food & Beverage Services NC2</option>
-    					<option value="ABM">Accountancy and Business Management</option>
+    					<option value="ABM">ABM</option>
     					<option value="General Academics">General Academics (GAS)</option>
     					<option value="HUMMS">Humanities and Social Sciences</option>
-    					<option value="STEM">Science, Technology, Engineering, and Mathematics</option>
-    					<option value="ICT">Information and Communications Technology</option>
+    					<option value="STEM">STEM</option>
+    					<option value="ICT">ICT</option>
     					<option value="Home Economics">Home Economics</option>
     					<option value="Industrial Arts">Industrial Arts</option>
     					<option value="Arts and Design Track">Arts and Design Track</option>
