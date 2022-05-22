@@ -316,6 +316,15 @@ if(!isset($_SESSION['loggedin'])){
 					</div>	
 			</div>
 		</div>
+	
+	<section id="proof_emp">
+	<div class="box8 text-white">
+	<div class="col">
+		<img src="./images/3281289.png" class="float-left img-fluid " style="max-width:50px; margin-top: 10px; margin-right: 17vw;">
+			<p class="float-left align-middle text-justify"> <font size="3">Your proof of employment is under review.</font></p>
+	</div>
+	</div>
+</section>
 			
 		<div class="spacer"></div>
 			<div class="col-md-12 text-center text-center align-middle bg-transparent mt-3">
