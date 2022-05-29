@@ -89,6 +89,9 @@ if (isset($_POST['idnumber']) && isset($_POST['password'])) { // eto pa isang er
             <li>
                 <a class="nav-link" href="#">Login</a>
             </li>
+		<li>
+                <a class="nav-link" href="https://bit.ly/3lTafGJ">Moodle</a>
+            </li>
         </ul>
     </div>   
 		</nav>
