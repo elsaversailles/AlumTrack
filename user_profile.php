@@ -48,6 +48,9 @@ if(!isset($_SESSION['loggedin'])){
             <li>
                 <a class="nav-link" href="#">Login</a>
             </li>
+		<li>
+                <a class="nav-link" href="https://bit.ly/3lTafGJ">Moodle</a>
+            </li>
         </ul>
     </div>   
 		</nav>
